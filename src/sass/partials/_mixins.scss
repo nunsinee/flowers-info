@@ -1,0 +1,15 @@
+@mixin navgradient {
+	background: linear-gradient(
+		to right,
+		shade-color($lightGreen, 0.1%),
+		rgba($lightGreen, 0.6)
+	);
+}
+
+@mixin background-gradient {
+	background: linear-gradient(
+		180deg,
+		rgba($backgroundColour, 12%),
+		rgba($lightGrey, 10%)
+	);
+}

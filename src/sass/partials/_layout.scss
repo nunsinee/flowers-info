@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+
+html,
+body {
+	color: $black;
+	@include background-gradient;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	color: $black;
+}
+
+.wrapper {
+	flex: 1 0 auto;
+}
+
+h1 {
+	margin-top: 1em;
+	color: $copy;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-top: 1em;
+	color: $black;
+	font-weight: 300;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+span {
+	font-size: 1.2em;
+	font-weight: 400;
+	padding-right: 0.5em;
+	color: $headingColour;
+}
+
+.container {
+	margin: 0 auto;
+	@media (max-width: $tablet) {
+		max-width: 100%;
+		padding-top: 1em;
+	}
+
+	&.nav-container {
+		@media (max-width: $tablet) {
+			width: 100%;
+			margin: 0 auto;
+			& div {
+				margin-bottom: 0em;
+			}
+		}
+
+		@media (min-width: $tablet) {
+			width: 80%;
+			margin: 0 auto;
+			& div {
+				margin-bottom: 0em;
+			}
+		}
+	}
+}
+
+.spinner-container {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.text-muted {
+	color: getColour(grey);
+}
+
+form {
+	background-color: rgba($white, 0.3);
+	box-shadow: 3px 3px rgba($copy, 0.1%);
+	padding: 1em;
+	margin-bottom: 3em;
+
+	@media (max-width: $tablet) {
+		padding: 1em;
+	}
+}
+
+label {
+	font-weight: 700;
+}
+
+.card {
+	margin-bottom: 2em;
+}
+
+.card-img-top {
+	max-height: 100%;
+	object-fit: cover;
+	height: 150px;
+}
+
+.card-body {
+	max-height: 200px;
+}
+
+.card-menu {
+	display: flex;
+	text-decoration: none;
+	justify-content: space-between;
+}
+
+.list-group-item-info {
+	background-color: getColour(ligtForm);
+	padding-left: 0.25em;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	border: none;
+	max-width: 100%;
+	@media (max-width: $tablet) {
+		width: 100%;
+	}
+
+	@media (min-width: $tablet) {
+		width: 400px;
+	}
+}

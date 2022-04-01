@@ -1,0 +1,66 @@
+.menu {
+	@include navgradient;
+	font-size: 1.2rem;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: $black;
+	font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: $white;
+	font-weight: 300;
+
+	@media (max-width: $desktop) {
+		color: $white;
+	}
+}
+
+.navbar-dark .navbar-brand {
+	color: $brandLogo;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+@media (max-width: $desktop) {
+	.navbar > .container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		padding-left: 1em;
+	}
+
+	.nav-item {
+		padding-left: 1em;
+	}
+
+	.navbar-toggler {
+		margin-right: 0.5em;
+	}
+
+	.navbar-brand {
+		margin-left: 0.5em;
+	}
+
+	.navbar {
+		padding-bottom: 0;
+	}
+
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: $black;
+		font-weight: 600;
+	}
+}
+
+.navbar-nav {
+	@media (max-width: $mobile) {
+		margin-bottom: 1em;
+	}
+}
