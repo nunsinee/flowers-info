@@ -10,15 +10,11 @@ const RemoveFavourites = () => {
 	};
 
 	return (
-		<>
-			<span>
-				<TiDelete
-					size="32px"
-					style={{ color: state.color }}
-					onClick={handleClick}
-				/>
-			</span>
-		</>
+		<TiDelete
+			size="32px"
+			style={{ color: state.color }}
+			onClick={handleClick}
+		/>
 	);
 };
 

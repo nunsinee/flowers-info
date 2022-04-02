@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MdFavorite } from "react-icons/md";
+import { BsHeartFill } from "react-icons/bs";
 
 const AddFavourites = () => {
 	const [state, setState] = useState({
@@ -11,9 +11,9 @@ const AddFavourites = () => {
 
 	return (
 		<>
-			<span>
-				<MdFavorite
-					size="32px"
+			<span className="changeColor">
+				<BsHeartFill
+					size="22px"
 					style={{ color: state.color }}
 					onClick={handleClick}
 				/>

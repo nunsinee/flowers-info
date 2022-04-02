@@ -1,8 +1,6 @@
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import React from "react";
-
 const FlowerCard = (props) => {
 	const FavouriteComponent = props.favComponent;
 

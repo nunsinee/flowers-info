@@ -20,11 +20,9 @@ const FavouritesList = (props) => {
 	};
 
 	const RemoveFavFlower = (id) => {
-		const favItems = JSON.parse(localStorage.getItem("flowFav"));
-		favItems.splice(favItems.indexOf(id), 1);
-
-		setFavourites(favItems);
-		saveToLocalStorage(favItems);
+		let newFavoriteList = favourites.filter((fav) => fav.id !== id);
+		setFavourites(newFavoriteList);
+		saveToLocalStorage(newFavoriteList);
 	};
 
 	if (favourites.length === 0) {
@@ -53,7 +51,7 @@ const FavouritesList = (props) => {
 
 									<div
 										variant="outline-warning"
-										onClick={RemoveFavFlower}
+										onClick={() => RemoveFavFlower(fav.id)}
 										type="button"
 									>
 										<RemoveFavourites />
