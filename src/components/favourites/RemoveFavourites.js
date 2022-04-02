@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsHeartFill } from "react-icons/bs";
+import { TiDelete } from "react-icons/ti";
 
 const RemoveFavourites = () => {
 	const [state, setState] = useState({
@@ -11,11 +11,13 @@ const RemoveFavourites = () => {
 
 	return (
 		<>
-			<BsHeartFill
-				size="22px"
-				style={{ color: state.color }}
-				onClick={handleClick}
-			/>
+			<span>
+				<TiDelete
+					size="32px"
+					style={{ color: state.color }}
+					onClick={handleClick}
+				/>
+			</span>
 		</>
 	);
 };
