@@ -26,6 +26,8 @@ There are 2 sections of website.
     -   **_Message_** - required, minimum 10 characters.
 
 -   **Login** Create a form with username/email and password fields.
+    -   **_username:_** "nunsinee@gmail.com"
+    -   **_Password_** :Mimmim2021
 
 ### Admin section:
 
