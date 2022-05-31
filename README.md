@@ -73,3 +73,5 @@ npm install
 "yup": "^0.32.11
 
 ### Release
+
+[https://nv-js-frameworks-2.netlify.app/](https://nv-js-frameworks-2.netlify.app/)
