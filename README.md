@@ -2,7 +2,7 @@
 
 JS FrameWork Course Assignment 2 is made with React, React-Bootstrap and SASS. Using Wordpress API
 
-![JS FrameWork Course Assignment 2](https://raw.githubusercontent.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-nunsinee/main/assets/images/screenshort_js_framework_2.png)
+![image](.src/assets/images/screenshort_js_framework_2.png)
 
 ## Description
 
