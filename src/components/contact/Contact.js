@@ -31,7 +31,7 @@ const schema = yup.object().shape({
 	email: yup
 		.string("Please enter your website")
 		.matches(EMAIL_REGEX, "Your email is not valid"),
-	subject: yup.string().required(),
+	subject: yup.string().required("Please select your subject"),
 	message: yup
 		.string("Please enter your message here")
 		.min(
@@ -47,7 +47,7 @@ export default function ContactForm() {
 		handleSubmit,
 		setValue,
 		formState: { errors },
-	} = useForm({ resolver: yupResolver(schema) });
+	} = useForm({ mode: "onChange", resolver: yupResolver(schema) });
 
 	function onSubmit(data) {
 		console.log(data);
@@ -130,19 +130,19 @@ export default function ContactForm() {
 										})
 									}
 								>
-									<option>Select Subjects</option>
+									<option value="">Select Subject</option>
 									<option value="subject-one">
 										Subject One
 									</option>
 									<option value="subject-two">
 										Subject Two
 									</option>
-									{errors.subject && (
-										<FormError>
-											{errors.subject.message}
-										</FormError>
-									)}
 								</Form.Select>
+								{errors.subject && (
+									<FormError>
+										{errors.subject.message}
+									</FormError>
+								)}
 							</Form.Group>
 
 							<Form.Group className="mb-3">

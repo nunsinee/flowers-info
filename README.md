@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# JS FrameWork Course Assignment 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JS FrameWork Course Assignment 2 is made with React, React-Bootstrap and SASS. Using Wordpress API
 
-## Available Scripts
+![JS FrameWork Course Assignment 2](https://raw.githubusercontent.com/nunsinee/js-frameworks-course-assignment-nunsinee/main/assets/images/screenshort_js_framework_2.png)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+To do Login functionality using a Wordpress API with the JWT plugin. Using react-hook-form and yup for Form validation.
+Website using data from WordPress API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There are 2 sections of website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Customer-facing:
 
-### `npm test`
+-   **Homepage** with items(flowers) list.
+-   **Detail page** show detail of item.
+-   **Contact** Show contact form with validation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    a form with the following inputs and validation:
 
-### `npm run build`
+    -   **_First name_** - required, minimum 3 characters
+    -   **_Last name_** - required, minimum 4 characters
+    -   **_Email_** - required, must be in a valid email format
+    -   **_Subject_** - required, this must be a select box with at least 2 options
+    -   **_Message_** - required, minimum 10 characters.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Login** Create a form with username/email and password fields.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Admin section:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   This page will simply display an "Admin" heading.
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   [React](https://reactjs.org/)
+-   [React-bootStrap](https://react-bootstrap.github.io/)
+-   [Sass](https://www.npmjs.com/package/node-sass)
+-   [React-hook-form](https://www.npmjs.com/package/react-hook-form)
+-   [Yup](https://www.npmjs.com/package/yup)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repo:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-nunsinee.git
+```
 
-## Learn More
+2. Install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Package Dependencies
 
-### Code Splitting
+"@hookform/resolvers": "^2.8.8",
+"@testing-library/jest-dom": "^5.16.3",
+"@testing-library/react": "^12.1.4",
+"@testing-library/user-event": "^13.5.0",
+"axios": "^0.26.1",
+"bootstrap": "^5.1.3",
+"node-sass": "^7.0.1",
+"react": "^17.0.2",
+"react-bootstrap": "^2.2.2",
+"react-dom": "^17.0.2",
+"react-hook-form": "^7.28.1",
+"react-icons": "^4.3.1",
+"react-router-dom": "^6.2.2",
+"react-scripts": "5.0.0",
+"web-vitals": "^2.1.4",
+"yup": "^0.32.11
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Release
