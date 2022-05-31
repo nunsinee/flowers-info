@@ -2,7 +2,7 @@
 
 JS FrameWork Course Assignment 2 is made with React, React-Bootstrap and SASS. Using Wordpress API
 
-![image](.src/assets/images/screenshort_js_framework_2.png)
+![image](./src/assets/images/screenshort_js_framework_2.png)
 
 ## Description
 
