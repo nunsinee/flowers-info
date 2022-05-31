@@ -11,7 +11,7 @@ Website using data from WordPress API.
 
 There are 2 sections of website.
 
-### Customer-facing:
+### Customer-facing sections:
 
 -   **Homepage** with items(flowers) list.
 -   **Detail page** show detail of item.
