@@ -55,6 +55,14 @@ git clone https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignm
 npm install
 ```
 
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
 ### Package Dependencies
 
 "@hookform/resolvers": "^2.8.8",
