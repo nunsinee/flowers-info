@@ -1,12 +1,10 @@
 # JS FrameWork Course Assignment 2
 
-JS FrameWork Course Assignment 2 is made with React, React-Bootstrap and SASS. Using Wordpress API
-
 ![image](./src/assets/images/screenshort_js_framework_2.png)
 
 ## Description
 
-To do Login functionality using a Wordpress API with the JWT plugin. Using react-hook-form and yup for Form validation.
+JS FrameWork Course Assignment 2 is made with React, React-Bootstrap and SASS. Using Wordpress API.To do Login functionality using a Wordpress API with the JWT plugin. Using react-hook-form and yup for Form validation.
 Website using data from WordPress API.
 
 There are 2 sections of website.
