@@ -7,6 +7,10 @@ function Navigation() {
 	const [auth, setAuth] = useContext(AuthContext);
 	const navigate = useNavigate();
 
+	function login() {
+		navigate("/login");
+	}
+
 	function logout() {
 		setAuth(null);
 		navigate("/");
@@ -28,21 +32,21 @@ function Navigation() {
 						<NavLink to="/contact" className="nav-link">
 							Contact
 						</NavLink>
-						<NavLink to="/login" className="nav-link">
-							Login
-						</NavLink>
-
+					</Nav>
+					<Nav className="mr-auto">
 						{auth ? (
 							<>
 								<NavLink to="/admin" className="nav-link">
 									admin
 								</NavLink>
-								<Button variant="warning" onClick={logout}>
+								<Button variant="danger" onClick={logout}>
 									Log out
 								</Button>
 							</>
 						) : (
-							""
+							<Button variant="dark" onClick={login}>
+								Log in
+							</Button>
 						)}
 					</Nav>
 				</Navbar.Collapse>
