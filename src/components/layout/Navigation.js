@@ -12,6 +12,7 @@ function Navigation() {
 	}
 
 	function logout() {
+		window.confirm("Are you sure to logout?");
 		setAuth(null);
 		navigate("/");
 	}
