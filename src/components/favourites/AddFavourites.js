@@ -23,25 +23,3 @@ const AddFavourites = () => {
 };
 
 export default AddFavourites;
-
-// import React, { useState } from "react";
-// import { BsHeartFill } from "react-icons/bs";
-
-// const AddFavourites = () => {
-// 	const [isFav, setIsFav] = useState(false);
-
-// 	return (
-// 		<>
-// 			<BsHeartFill
-// 				size="22px"
-// 				style={{ color: "indianred" }}
-// 				onClick={() => setIsFav(!isFav)}
-// 			/>
-// 			{isFav
-// 				? ({{ color: "indianred" }})
-// 				: (style = {{ color: "indianred" }})}
-// 		</>
-// 	);
-// };
-
-// export default AddFavourites;

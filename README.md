@@ -80,6 +80,6 @@ npm run start
 "web-vitals": "^2.1.4",
 "yup": "^0.32.11
 
-### Release
+### Live Website
 
 [https://nv-js-frameworks-2.netlify.app/](https://nv-js-frameworks-2.netlify.app/)
