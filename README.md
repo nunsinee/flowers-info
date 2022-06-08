@@ -25,7 +25,7 @@ There are 2 sections of website.
 
 -   **Login** Create a form with username/email and password fields.
     -   **_username:_** "nunsinee@gmail.com"
-    -   **_Password_** :Mimmim2021
+    -   **_Password_** :Pass1234
 
 ### Admin section:
 
