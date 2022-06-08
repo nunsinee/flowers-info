@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import { BsHeartFill } from "react-icons/bs";
-import { getExitingFavs } from "../../utils/favFunctions";
+// import { getExitingFavs } from "../../utils/favFunctions";
 
-const RemoveFavourites = (flowers, event) => {
+const RemoveFavourites = () => {
 	const [isRemove, setIsRemove] = useState(false);
 
-	const handleClick = (event, flower) => {
-		let favs = getExitingFavs();
-
-		const checkFavExist = favs.filter((fav) => fav.id !== flower.id);
-		if (checkFavExist) {
-			setIsRemove((current) => !current);
-		} else {
-			setIsRemove((current) => current);
-		}
+	const handleClick = () => {
+		setIsRemove((current) => !current);
 	};
 
 	return (
