@@ -7,7 +7,7 @@ export default function HomePage() {
 	return (
 		<>
 			<Container>
-				<Heading title="Home" />
+				<Heading title="Flowers Informations" />
 				<hr />
 				<SubHeading subTitle="Flowers Lists" />
 				<FlowerList />

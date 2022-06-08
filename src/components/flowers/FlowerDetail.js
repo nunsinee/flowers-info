@@ -64,7 +64,7 @@ export default function FlowerDetail() {
 	return (
 		<>
 			<Container key={flower.id}>
-				<Heading title={flower.title.rendered} />
+				<Heading title={flower.name} />
 				<hr />
 				<Breadcrumb>
 					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
@@ -86,10 +86,11 @@ export default function FlowerDetail() {
 								variant="top"
 								src={flower.featured_media_src_url}
 								alt={flower.title.rendered}
+								className="card-img-top__image-detail"
 							/>
 							<ListGroup className="list-group-flush">
 								<ListGroupItem>
-									{flower.content.rendered}
+									{flower.excerpt.rendered}
 								</ListGroupItem>
 							</ListGroup>
 						</Card>

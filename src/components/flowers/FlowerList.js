@@ -5,12 +5,12 @@ import Loader from "../layout/Loader";
 import ErrorMessage from "../common/ErrorMessage";
 import FlowerCard from "./FlowerCard";
 import AddFavourites from "../favourites/AddFavourites";
+import { getExitingFavs, saveFavs } from "../../utils/favFunctions";
 
 export default function FlowersList() {
 	const [flowers, setFlowers] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
-	const [favourites, setFavourites] = useState([]);
 
 	useEffect(() => {
 		async function fetchData() {
@@ -32,6 +32,11 @@ export default function FlowersList() {
 		//eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
+	useEffect(() => {
+		const flowerFavs = getExitingFavs();
+		saveFavs(flowerFavs);
+	}, []);
+
 	if (loading) {
 		return <Loader />;
 	}
@@ -40,14 +45,21 @@ export default function FlowersList() {
 		return <ErrorMessage message={`Error:${error}`} />;
 	}
 
-	const saveToLocalStorage = (item) => {
-		localStorage.setItem("flowFav", JSON.stringify(item));
-	};
+	const AddFavFlower = (flower, event) => {
+		const currentFavs = getExitingFavs();
 
-	const AddFavFlower = (flower) => {
-		const newFavFlowerCard = [...favourites, flower];
-		setFavourites(newFavFlowerCard);
-		saveToLocalStorage(newFavFlowerCard);
+		const existFavs = currentFavs.find(function (fav) {
+			return fav.id === flower.id;
+		});
+
+		if (existFavs === undefined) {
+			currentFavs.push(flower);
+			saveFavs(currentFavs);
+		} else {
+			const newFavs = currentFavs.filter((fav) => fav.id !== flower.id);
+			saveFavs(newFavs);
+			getExitingFavs(newFavs);
+		}
 	};
 
 	return (

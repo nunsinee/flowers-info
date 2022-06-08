@@ -30,7 +30,6 @@ h1 {
 	margin-top: 1em;
 	color: $copy;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 h2 {
@@ -39,6 +38,10 @@ h2 {
 	font-weight: 300;
 	margin-bottom: 0.5em;
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
 }
 
 span {
@@ -85,10 +88,11 @@ span {
 }
 
 form {
+	max-width: 400px;
 	background-color: rgba($white, 0.3);
 	box-shadow: 3px 3px rgba($copy, 0.1%);
 	padding: 1em;
-	margin-bottom: 3em;
+	margin: 0 auto;
 
 	@media (max-width: $tablet) {
 		padding: 1em;
@@ -106,7 +110,14 @@ label {
 .card-img-top {
 	max-height: 100%;
 	object-fit: cover;
-	height: 150px;
+	height: 250px;
+	filter: saturate(1.4);
+
+	&__image-detail {
+		padding: 3em;
+		border-radius: $border-radius;
+		height: 350px;
+	}
 }
 
 .card-body {
@@ -133,4 +144,14 @@ label {
 	@media (min-width: $tablet) {
 		width: 400px;
 	}
+}
+
+.addFav {
+	color: $light-red;
+	content: "remove";
+}
+
+.removeFav {
+	color: $black;
+	content: "remove";
 }

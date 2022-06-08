@@ -1,18 +1,17 @@
-import { useState } from "react";
-import { TiDelete } from "react-icons/ti";
+import React, { useState } from "react";
+import { BsHeartFill } from "react-icons/bs";
 
-const RemoveFavourites = () => {
-	const [state, setState] = useState({
-		color: "red",
-	});
-	const handleClick = (e) => {
-		setState((state) => ({ ...state, color: "indianred" }));
+const RemoveFavourites = (flowers, event) => {
+	const [isAdd, setIsAdd] = useState(false);
+
+	const handleClick = (event) => {
+		setIsAdd((current) => !current);
 	};
 
 	return (
-		<TiDelete
-			size="32px"
-			style={{ color: state.color }}
+		<BsHeartFill
+			className={isAdd ? "removeFav" : "addFav"}
+			size="22px"
 			onClick={handleClick}
 		/>
 	);

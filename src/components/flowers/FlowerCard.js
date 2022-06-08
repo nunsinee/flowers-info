@@ -1,4 +1,5 @@
 import { Col, Card } from "react-bootstrap";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const FlowerCard = (props) => {
@@ -7,7 +8,7 @@ const FlowerCard = (props) => {
 	return (
 		<>
 			{props.flowers.map((flower, index) => (
-				<Col xs={12} md={6} lg={3} key={flower.id}>
+				<Col xs={12} md={4} key={flower.id}>
 					<Card>
 						<Link to={`/detail/${flower.id}`}>
 							<Card.Img
