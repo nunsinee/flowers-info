@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import RemoveFavourites from "../favourites/RemoveFavourites";
 import FlowerCard from "../flowers/FlowerCard"; //22
 import NoFavItems from "../common/NoFavItems";
 import { getExitingFavs, saveFavs } from "../../utils/favFunctions";
+import RemoveFavourites from "../favourites/RemoveFavourites";
 
 const FavouritesList = (props) => {
 	const [favourites, setFavourites] = useState(getExitingFavs);

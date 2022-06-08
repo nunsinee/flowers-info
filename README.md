@@ -1,6 +1,6 @@
 # JS FrameWork Course Assignment 2
 
-![image](./src/assets/images/screenshort_js_framework_2.png)
+![image](./src/assets/images/screenshort_js_framework_2.jpg)
 
 ## Description
 

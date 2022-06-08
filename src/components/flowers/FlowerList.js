@@ -57,6 +57,7 @@ export default function FlowersList() {
 			saveFavs(currentFavs);
 		} else {
 			const newFavs = currentFavs.filter((fav) => fav.id !== flower.id);
+
 			saveFavs(newFavs);
 			getExitingFavs(newFavs);
 		}
