@@ -70,6 +70,7 @@ export default function FlowersList() {
 					flowers={flowers}
 					handleFavClick={AddFavFlower}
 					favComponent={AddFavourites}
+					favourites
 				/>
 			</Row>
 		</>

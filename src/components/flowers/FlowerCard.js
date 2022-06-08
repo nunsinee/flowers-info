@@ -29,7 +29,6 @@ const FlowerCard = (props) => {
 									variant="outline-warning"
 									onClick={() => props.handleFavClick(flower)}
 									type="button"
-									className="textBtn"
 								>
 									<FavouriteComponent />
 								</div>
